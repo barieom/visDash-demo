@@ -1,0 +1,39 @@
+<room>
+    <name>Experience</name>
+    <narrative>
+        <heading>Engineering</heading>
+        <mission_statement>Two households, both alike in dignity In fair Verona, where we lay our scene From ancient grudge break to new mutiny Where civil blood makes civil hands unclean.</mission_statement>
+
+        <board>Analytics Dashboard http://some-adobe-dashboard/dashboard</board>
+    </narrative>
+    <workBoard>https://leankit.com/uploads/images/general/_2048xAUTO_fit_center-center/1-SmalDevelopmentTeamKanbanBoard-eb79376d.png</workBoard>
+    <team>
+        <slt>
+            <person name="Steve Wozniak" role="VP" pic="https://i.amz.mshcdn.com/a2KG7WXfp8JYO2rLmEqWH-5nd6I=/950x534/filters:quality(90)/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fcard%2Fimage%2F28339%2FWoz.jpg"/>
+            <person name="Devi Loper" role="Innovation Development Lead" pic="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350"/>
+            <person name="Dev LoopAlot" role="Senior Development Manager" pic="https://images.pexels.com/photos/6110/man-holiday-people-face.jpg?auto=compress&cs=tinysrgb&dpr=2&h=350"/>
+            <person name="Abhishek Gaurav" role="QA Director" pic="https://images.pexels.com/photos/694438/pexels-photo-694438.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"/>
+            <person name="Mark Zuckerburg" role="Technology Senior Board Memeber" pic="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Rz1DUZevsLlASoWyjAh6Y65VqbIxCpT2MKuoOCDRIRh__49B"/>
+        </slt>
+        <squads>
+            <squad name="Team Alpha" />
+            <squad name="Beta" />
+            <squad name="Theta" />
+            <squad name="Chi" />
+            <squad name="Rho" />
+            <squad name="Pi" />
+        </squads>
+    </team>
+    <metrics>
+        <metric name="Growth Rate" current="61%" target="63%" status="yellow">
+            <graph>some graph data</graph>
+        </metric>
+        <metric name="Revenue Stream" current="$24.2M" target="$30M" status="green">
+            <graph url="https://corewiki/somegraph.png" />
+        </metric>
+    </metrics>
+    <ceremonies>
+        <ceremony name="Open Brainstorm Session" time="Tuesdays @ 11am EST" location="Building Apple; Room 111" Remote="Meetme: 444, password: 444" />
+        <ceremony name="Operations Meeting" time="Fridays @ 9am EST" location="Building Apple; Room 000" Remote="Meetme: 555, password: 555" />
+    </ceremonies>
+</room>

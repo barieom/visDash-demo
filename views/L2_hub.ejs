@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Quarter Overview
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="hub.css">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    <% include templates/evr_navbar.ejs %>
+
+    <div class="main">
+        <div class="row">
+            <div class="col-8 hub-title">
+                <h2> Quarterly Party Overview</h2>
+            </div>
+            <div class="col-3">
+                <% include templates/metric_legend.ejs %>
+            </div>
+        </div>
+
+        <div class="hub-list-container">
+            <% room.forEach(function(item, i) { %>
+                <a href="/<%= item.room.name.toLowerCase().replace(/\s/g, '').replace(/[^a-zA-Z ]/g, '')%>">
+                <div class="row room-row" id="ex_room">
+                    
+                    <% if ((i % 2) == 0) { %>
+                    <div class="col-md-3 room-title-tab">
+                    <% } else { %>
+                    <div class="col-md-3 room-title-tab-alt">                    
+                    <% } %>
+                        <div class="row room-title-img">
+                            <% include templates/hub2_valuestream_img.ejs %>
+                        </div>
+                        <div class="row room-title-name">
+                            <% include templates/hub2_valuestream_name.ejs %>
+                        </div>
+                    <% if ((1 == 0)) { %> </div> <% } %>
+                    </div>
+
+                    <% if ((i % 2) == 0) { %>
+                    <div class="col-9 room-preview-tab">
+                    <% } else { %>
+                    <div class="col-9 room-preview-alt">                    
+                    <% } %>
+                        <div class="row fill-row">
+                            <div class="col-5">
+                                <div class="row fill-row">
+                                    <div class="row vs-metric-title">
+                                        <h4> Party Metrics </h4>
+                                    </div>
+                                    <div class="row vs-metric-row">
+                                        <% if (Array.isArray(item.room.metrics.metric)) { %>
+                                            <% item.room.metrics.metric.forEach(function(metric, i) { %>
+                                            <div class="col-6 metric-pad">
+                                                <% if (metric.$.status.toLowerCase() == "green") { %>
+                                                <div class="metric-success metric-setting">
+                                                <% } if (metric.$.status.toLowerCase() == "yellow") { %>
+                                                <div class="metric-warning metric-setting">
+                                                <% } if (metric.$.status.toLowerCase() == "red") { %>
+                                                <div class="metric-dire metric-setting">
+                                                <% } %>
+                                                    <div class="metric-heading">
+                                                        <h4><%=metric.$.current %></h4>
+                                                    </div>
+                                                    <div class="metric-detail"> 
+                                                        <h5> <%= metric.$.target  %></h5>
+                                                        <h5> <%= metric.$.name%></h5>
+                                                    </div>
+
+                                                <% if ((metric.$.status.toLowerCase() == "green") || (metric.$.status.toLowerCase() == "yellow") || (metric.$.status.toLowerCase() == "red")) { %>
+                                                </div>
+                                                <% } %>
+
+                                                <!-- for div closing tags when using text editors: ignore -->
+                                                <% if ((1 == 0)) { %></div></div><% } %>
+                                            </div>
+                                            <% }) %>
+                                        <% } else { %> 
+                                            <div class="col-6 metric-pad">
+                                                <% if (item.room.metrics.metric.$.status.toLowerCase() == "green") { %>
+                                                <div class="metric-success metric-setting">
+                                                <% } if (item.room.metrics.metric.$.status.toLowerCase() == "yellow") { %>
+                                                <div class="metric-warning metric-setting">
+                                                <% } if (item.room.metrics.metric.$.status.toLowerCase() == "red") { %>
+                                                <div class="metric-dire metric-setting">
+                                                <% } %>
+                                                    <div class="metric-heading">
+                                                        <h4><%=item.room.metrics.metric.$.current %></h4>
+                                                    </div>
+                                                    <div class="metric-detail"> 
+                                                        <h5> <%= item.room.metrics.metric.$.target  %></h5>
+                                                        <h5> <%= item.room.metrics.metric.$.name%></h5>
+                                                    </div>
+
+                                                <% if ((item.room.metrics.metric.$.status.toLowerCase() == "green") || (item.room.metrics.metric.$.status.toLowerCase() == "yellow") || (item.room.metrics.metric.$.status.toLowerCase() == "red")) { %>
+                                                </div>
+                                                <% } %>
+
+                                                <!-- for div closing tags when using text editors: ignore -->
+                                                <% if ((1 == 0)) { %></div></div><% } %>
+                                            </div>
+                                        <% } %>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="row fill-row">
+                                    <div class="col-12">
+                                        <div class="row room-team-title-setting">
+                                            <h4> PARTY LEADERSHIP TEAM </h4>
+                                        </div>
+                                        <div class="row room-team-members">
+                                            <% item.room.team.slt.person.forEach(function(slt) { %>
+                                            <div class="col-2 member-container">
+                                                <div class="card member-content">
+                                                    <div class="member-img-set">
+                                                        <img class="card-img-top member-img" src="<%=slt.$.pic%>" alt="<%=slt.$.name%>">       
+                                                    </div>
+                                                    <div class="card-body member-name">
+                                                        <p class="card-text bold-name"><%= slt.$.name %></p>
+                                                    </div>
+                                                    <div class="card-body member-name">
+                                                        <p class="card-text"><%= slt.$.role %></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <% }); %>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <% if (1 == 0) { %>
+                    </div>
+                    <% } %>
+                    </div>
+                </div></a>
+            <% }); %>
+
+        
+        </div>
+    </div>
+
+
+</body>
+</html>

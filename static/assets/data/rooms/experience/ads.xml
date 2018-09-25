@@ -1,0 +1,60 @@
+<outcome> 
+    <name>Advertisement Lorem Ipsum</name> 
+    <fygoal>gp</fygoal> 
+    <room>experience</room> 
+    <value>$23,000,000</value> 
+    <annualmos>Lorem ipsum dolor sit amet, consectetur adipiscing elit</annualmos> 
+    <loe>1 LOREM </loe> 
+    <keyincrements> 
+        <increment> 
+            <name>Ad placement</name> 
+            <description>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description> 
+        </increment> 
+        <increment> 
+            <name>Business Model advertisement</name> 
+            <description>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</description> 
+        </increment> 
+        <increment> 
+            <name>Ad model Y2k launch</name> 
+            <description>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </description> 
+        </increment> 
+        <increment> 
+            <name>Business Application</name> 
+            <description>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</description> 
+        </increment> 
+    </keyincrements> 
+    <quarterlymos> 
+        <mos>Lorem ipsum dolor sit amet, consectetur adipiscing elit</mos>
+        <mos>Customers Lorem ASD ipsum dolor sit amet, consectetur adipiscing elit </mos>
+    </quarterlymos> 
+    <valueassumption> 
+        <assumption>Lorem ipsum dolor sit amet, consectetur adipiscing elit</assumption>
+        <assumption>Lorem ipsum dolor sit amet, consectetur adipiscing elit</assumption> 
+    </valueassumption>
+    <workBoard></workBoard> 
+    <team> 
+        <slt> 
+            <person name="" role="" pic="" /> 
+            <person name="" role="" pic="" /> 
+            <person name="" role="" pic="" /> 
+        </slt> 
+        <squads> 
+            <squad name="" pic=""/> 
+            <squad name="" pic=""/> 
+            <squad name="" pic=""/> 
+        </squads> 
+    </team> 
+    <metrics> 
+        <metric name="" current="" target="" status=""/> 
+        <graph></graph> 
+    </metrics> 
+    <impediments> 
+        <impediment name="LOREM" status="yellow" > 
+            <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit</desc> 
+        </impediment> 
+        <impediment name="Noe one is here" status="green"> 
+            <desc>They all took rest days</desc> 
+        </impediment> 
+    </impediments> 
+    <filename>ads.xml</filename>
+</outcome>

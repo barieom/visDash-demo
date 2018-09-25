@@ -1,0 +1,15 @@
+<div class="room-section row">
+			<div class="col-12">
+				<div class="row section-title">
+					<h5>Impediments</h5>
+				</div>
+			</div>
+			<div class="col-12" >
+					<% outcome.forEach(function(_outcome, i) { %>
+						<% var outcome_room = _outcome.outcome.room.toLowerCase().replace(/\s/g, '').replace(/[^a-zA-Z ]/g, '') %>
+						<% if (outcome_room == room[id].room.name.toLowerCase().replace(/\s/g, '').replace(/[^a-zA-Z ]/g, ''))  { %>
+							<% include templates/impediments.ejs %>
+						<% } %>
+					<% }) %>
+			</div>
+		</div>

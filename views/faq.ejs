@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="hub.css">
+    <link rel="stylesheet" type="text/css" href="/navbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <title>
+        EV FAQ
+    </title>
+</head>
+<body>
+    <% include templates/evr_navbar.ejs %>
+
+     <div class="main">
+        <div class="row">
+            <div class="col-8 hub-title">
+                <h2> visDash FAQ</h2>
+            </div>
+        </div>
+
+        <div class="row faq-container">
+            <div class="col-11">
+
+                <div class="row section-title">
+                    <h5>What is visDash?</h5>
+                </div>
+                <div class="row section-content">
+                    <p>visDash is an organization and visualization dashboard tool for small scale to large scale organizations and companies. visDash aligns everyone's understanding of the organization's big picture goal, while also facilitating smooth communication between the executives and other employees regarding company priorities and short term goals. </p> 
+                    <p>Using visDash encourages transparency and trust within an organization and, if used correctly, ensures that the company or organization's performance drastically increases, leading to increased revenue and/or growth; more importantly, visDash empowers everyone in an organization. </p>
+                    
+                    <p>The features offered by visDash are: </p>                   
+                    <ul>
+                        <li>List, communicate, and visualize company's big picture strategic goals</li>
+                        <li>List, communicate, and visualize company's smaller picture strategic goals</li>
+                        <li>Maps how each specific quarterly, monthly, or weekly strategic goals relate to big picture goals</li>
+                        <li>Maps how big picture goals trickle down to specific short term goals</li>
+                        <li>Map which goals fall under which department or branch</li>
+                        <li>Track the progress of all goals</li>
+                        <li>Ownership and accountability of each goal </li>
+                        <li>Update any information easily</li>
+                    </ul>
+                    
+                    <p>The teams will determine the quarterly outcomes they want to achieve, visualize the work that they’re focused on and report on how they are progressing against that work.</p>
+                </div>
+                
+                <div class="row section-title">
+                    <h5>Data Updating Protocol</h5>
+                </div>
+                <div class="row section-content">
+                    
+                    <p></p>
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#updatestepbystep">Step by step guide on updating data</button>
+
+                    <p> *Notice: Click <a href=""  class="highlight">here </a> for a template on how the outcome level xml files should be completed. There are some nitpicky details that can be confusing.</p> 
+                    <p> Templates of the xml files can be found <a href="" class="highlight">here</a>. </p>
+
+                    <div class="modal fade" id="updatestepbystep" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row faq-img">
+                                            <p>1. Navigate to the page where data needs an update. Click on the "Edit This Page" on the navigation bar</p>
+                                            <img src="assets/images/faq/edit1.png"/>
+                                        </div>
+                                        <div class="row faq-img">
+                                            <p>2. Once inside the repository, click on the "Edit" button. If the user does not see this button, it is because the user does not have the required authentication to edit any information on the visDash platform. </p>
+                                            <img src="assets/images/faq/edit2.png"/>
+                                        </div>
+                                        <div class="row faq-img">
+                                            <p> 3. Make appropriate changes to the XML file. Once complete, click on the bottom right button labelled "commit." Again, be extra deliberate about checking for opening and closing brackets. </p>
+                                            <img src="assets/images/faq/edit3.png"/>
+                                        </div>
+                                        <div class="row faq-img">
+                                            <p>4. Click on "commit" again. Here, the user can specify what they changed about the XML file--a good practice.</p>
+                                            <img src="assets/images/faq/edit4.png"/>
+                                        </div>
+                                        <div class="row faq-img">
+                                            <p>5. The visDash platform will be updated accordingly.</p>
+                                            <img src="assets/images/faq/edit5.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="row section-title">
+                    <h5>How do I navigate this website?</h5>
+                </div>
+                <div class="row section-content">
+                    <p>Top level overview of goals can be viewed on Fiscal Year Goals. Quarter Overview page details all the relevant markers and information pertaining to each value streams; from here, navigate into a specific value stream for more specific data. </p>
+                    <p>Each outcome is then classified in two ways--by Fiscal Year Goal or by the value stream it falls under. Navigate into outcomes to view the details, e.g. key increments of an outcome </p>
+                    <p>The structure of this website is detailed below with the marketing value stream displayed as the example: </p>
+                    <img src="assets/images/faq/evstructure.png"/>
+                </div>
+
+
+                <div class="row section-title">
+                    <h5>What are the acronyms?</h5>
+                </div>
+                <div class="row section-content">
+                    <p>FY19 Goal = Fiscal Year Goal</p>
+                    <p>XML file = Don't be intimidated! XML is a simple form of storing data. Place whatever content you want to appear on the website between "tags," which look like "&lt &gt". So, for example, if your name is Barack, you'd put &lt name &gt Barack &lt /name &gt.  </p>
+                </div>
+                <div class="row section-title">
+                    <h5>Who should I contact for more info or future improvements?</h5>
+                </div>
+                <div class="row section-content">
+                    <p>Contact Barry Eom at b.eom@tufts.edu.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+

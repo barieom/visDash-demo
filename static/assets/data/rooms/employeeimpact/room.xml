@@ -1,0 +1,30 @@
+<room>
+    <name>Employee Impact</name>
+    <narrative>
+        <heading>Wellbeing</heading>
+        <mission_statement>You've gotta dance like there's nobody watching, Love like you'll never be hurt, Sing like there's nobody listening, And live like it's heaven on earth</mission_statement>
+
+        <board></board>
+    </narrative>
+    <workBoard>https://leankit.com/uploads/images/general/_2048xAUTO_fit_center-center/1-SmalDevelopmentTeamKanbanBoard-eb79376d.png</workBoard>
+    <team>
+        <slt>
+            <person name="Michael Scott" role="VP" pic="https://pbs.twimg.com/profile_images/563105554822737921/F-iH3BMT_400x400.png"/>
+            <person name="Leslie Knope" role="HR" pic="https://timedotcom.files.wordpress.com/2015/02/poehler.jpg"/>
+            <person name="Dwight Schrute" role="Recruitment and Acquisition" pic="https://theofficeanalytics.files.wordpress.com/2017/11/dwight.jpeg?w=1200"/>
+        </slt>
+        <squads>
+            <squad name="" />
+            <squad name="" />
+            <squad name="" />
+        </squads>
+    </team>
+    <metrics>
+        <metric name="Pursuit of Happyness" current="32%" target="33%" status="green"/>
+        <metric name="GP" current="$3.2M" target="$5" status="green"/>
+    </metrics>
+    <ceremonies>
+        <ceremony name="Scrum-of-scrums" time="Wednesdays @ 11am EST" location="WLT CR5011 Personal Training" Remote="Meetme: 888324213, password: 1234" />
+        <ceremony name="Ops review" time="Mondays @ 9am EST" location="WLT CR5053 Message Therapy" Remote="Meetme: 888324213, password: 1234" />
+    </ceremonies>
+</room>

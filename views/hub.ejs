@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/hub.css">
+    <link rel="stylesheet" type="text/css" href="/navbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <title>
+        EV Enterprise Goals
+    </title>
+</head>
+<body>
+    <% include templates/evr_navbar.ejs %>
+
+    <div class="main">
+        <div class="row">
+            <div class="col-8 hub-title">
+                <h2> FY19 Enterprise Goals Overview</h2>
+            </div>
+            <div class="col-3">
+                <% include templates/metric_legend.ejs %>
+            </div>
+        </div>
+        
+        <div class="hub-list-container">
+
+            <!-- FY19 GOAL OVERVIEW -->
+            <% fyg.forEach(function(goal, goal_i) { %>
+                <% if ((goal_i % 2) === 0) { %>
+                <div class=" row fyg-row fyg-row-bg" id="fyg_<%= goal.id %>">
+                <% } else { %>
+                <div class=" row fyg-row fyg-row-bg-alt" id="fyg_<%= goal.id %>">
+                <% }; %> 
+                    <div class="col-3">
+                        <div class="row fyg-metric-title">
+                            <% if (goal.mos.length > 1) { %>
+                                <h4> Goal Metrics </h4>
+                            <% } else { %>
+                                <h4> Goal Metric </h4>
+                            <% } %>
+                        </div>
+                        <div class="row" >
+                            <% if (goal.mos.length > 1) { %> 
+                                <% goal.mos.forEach(function(a_goal, i) { %>
+                                    <div class="col-6 fyg-mos-set">
+                                        <% if (a_goal.$.status.toLowerCase() == "green") { %>
+                                            <div id="fyg_<%= goal.id %>_m_<%= i %>" class="metric-success fyg-mos-box">
+                                        <% } if (a_goal.$.status.toLowerCase() == "yellow") { %>
+                                            <div id="fyg_<%= goal.id %>_m_<%= i %>" class="metric-warning fyg-mos-box">
+                                        <% } if (a_goal.$.status.toLowerCase() == "red") { %>
+                                            <div id="fyg_<%= goal.id %>_m_<%= i %>" class="metric-dire fyg-mos-box">
+                                        <% } %>
+
+                                            <div class="metric-heading">
+                                                <h4><%=a_goal.$.current %></h4>
+                                            </div>
+                                            <div class="metric-detail"> 
+                                                <h5> <%= a_goal.$.target %></h5>
+                                                <h5> <%= a_goal.$.name%></h5>
+                                            </div>
+
+                                        <% if ((a_goal.$.status.toLowerCase() == "red") || (a_goal.$.status.toLowerCase() == "yellow") || (a_goal.$.status.toLowerCase() == "green")) { %>
+                                            </div>
+                                        <% } %>
+
+                                        <!-- ignore: for div closing tags when using text editors -->
+                                        <% if (1 == 0) { %></div></div><% } %>
+                                    </div>
+                            <% }); } else { %>
+                                <div class="col-6 fyg-mos-set">
+                                    <% if (goal.mos.$.status.toLowerCase() == "green") { %>
+                                        <div id="fyg_<%= goal.id %>_m" class="metric-success fyg-mos-box">
+                                    <% } if (goal.mos.$.status.toLowerCase() == "yellow") { %>
+                                        <div id="fyg_<%= goal.id %>_m" class="metric-warning fyg-mos-box">
+                                    <% } if (goal.mos.$.status.toLowerCase() == "red") { %>
+                                        <div id="fyg_<%= goal.id %>_m" class="metric-dire fyg-mos-box">
+                                    <% } %>
+
+                                        <div class="metric-heading">
+                                            <h4><%=goal.mos.$.current %></h4>
+                                        </div>
+                                        <div class="metric-detail"> 
+                                            <h5> <%= goal.mos.$.target %></h5>
+                                            <h5> <%= goal.mos.$.name%></h5>
+                                        </div>
+
+                                    <% if ((goal.mos.$.status.toLowerCase() == "red") || (goal.mos.$.status.toLowerCase() == "yellow") || (goal.mos.$.status.toLowerCase() == "green")){ %>
+                                    </div>
+                                    <% } %>
+
+                                    <!-- for div closing tags when using text editors: ignore -->
+                                    <% if ((1 == 0)) { %> </div></div> <% } %>
+                                </div>
+                                <div class="col-6 offset-col-6">
+                                </div>
+                            <% } %>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 fyg-desc">
+                        <%= goal.desc %>
+                    </div>
+                    <div class="col-2 fyg-vet-col">
+                        <div class="row">
+                            <div class="col-12 fyg-vet">
+                                <div class="card member-content">
+                                    <div class="fyg-vet-title">
+                                        <h4> Party Lead </h4>
+                                    </div>
+                                    <div class="member-img-set">
+                                        <img class="card-img-top member-img-big" src="<%=goal.partyleader.$.pic%>" alt="<%=goal.partyleader.$.name%>">       
+                                    </div>
+                                    <div class="card-body l1-member-name">
+                                        <h6> <%= goal.partyleader.$.name %></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% if (1 == 0 ) { %> </div> <% } %> 
+                </div>
+                <div class="row fyg-outcome-content">
+                    <div class="col-12">
+                        <!-- This is O(n^2), but because we're dealing with small n, negligible -->
+                        <% var altColor = 0; %>
+                        <% goal.outcomes.forEach(function(outcome, oc_i) { %>
+                            <% let room = outcome.roomXml %>
+                            <a href='<%= outcome.url %>'>
+                                <% if ((altColor % 2) == 0) { %>
+                                <div class="row outcome-summary-line">
+                                <% } else { %>
+                                <div class="row outcome-summary-line-alt">
+                                <% }; %>
+                                    <div class="col-2  outcome-summary-line-desc outcome-logo">
+                                        <img src="assets/images/logos/<%= outcome.roomXml.urlName %>_heavyoutline.png"/>
+                                    </div>
+                                    <div class="col-9 outcome-summary-line-desc">
+                                        <h6> <%= outcome.name %> </h6>
+                                    </div>    
+                                    <div class="col-1">
+                                        <% var outcome_metric = outcome.metrics.metric.$.status.toLowerCase() %>
+                                        <% if (outcome_metric == "green" || outcome_metric == "yellow" || outcome_metric == "red") { %>
+                                            <span class="dot-<%= outcome_metric %> big-dot"></span>
+                                        <%} %>
+                                    </div>                        
+                                <% if (1 == 0) { %></div><% }; %>
+                                </div>
+                            </a>
+                            <% ++altColor %>
+                        <% }); %>
+                    </div>
+                </div>
+
+                <!-- OUTCOME REPRESENTATION FOR EACH FY19 GOAL -->
+             <% }); %>
+        </div>
+    </div>
+
+
+    <script>
+        var coll = document.getElementsByClassName("fyg-row");
+        for (var i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+
+</body>
+</html>

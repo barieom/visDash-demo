@@ -1,0 +1,55 @@
+<outcome> 
+    <name>Improve Spending for Lorem Ipsum</name> 
+    <fygoal>gp</fygoal> 
+    <room>evolve the business</room> 
+    <value>$5,000,000</value> 
+    <annualmos>Lorem ipsum dolor sit amet, consectetur adipiscing elit</annualmos> 
+    <loe>2 Ispums</loe> 
+    <keyincrements> 
+        <increment> 
+            <name>Lorem ipsum dolor sit amet,</name> 
+            <description>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description> 
+        </increment> 
+        <increment> 
+            <name> Dolore eu fugiat nulla</name> 
+            <description>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa qua</description> 
+        </increment> 
+        <increment> 
+            <name>If this then that</name> 
+            <description>Edit that a lot until its that then this so this</description> 
+        </increment> 
+    </keyincrements> 
+    <quarterlymos> 
+        <mos>Lorem ipsum dolor sit amet, consectetur adipiscing elit</mos> 
+    </quarterlymos> 
+    <valueassumption> 
+        <assumption>At vero eos et accusamus et iusto odio dignissimos</assumption>
+        <assumption>Et harum quidem rerum facilis est</assumption> 
+    </valueassumption>
+    <workBoard></workBoard> 
+    <team> 
+        <slt> 
+            <person name="" role="" pic="" /> 
+            <person name="" role="" pic="" /> 
+            <person name="" role="" pic="" /> 
+        </slt> 
+        <squads> 
+            <squad name="" pic=""/> 
+            <squad name="" pic=""/> 
+            <squad name="" pic=""/> 
+        </squads> 
+    </team> 
+    <metrics> 
+        <metric name="" current="" target="" status=""/> 
+        <graph></graph> 
+    </metrics> 
+    <impediments> 
+        <impediment name="" status="" raisedto="" raisedby="" raisedtolevel=""> 
+            <desc></desc> 
+        </impediment> 
+        <impediment name="" status="" raisedto="" raisedby="" raisedtolevel=""> 
+            <desc></desc> 
+        </impediment> 
+    </impediments> 
+    <filename>spending.xml</filename>
+</outcome>

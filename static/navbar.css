@@ -1,0 +1,51 @@
+a {
+	text-decoration: none;
+	color:inherit;
+}
+
+a:hover {
+	text-decoration: none;
+	color:inherit;	
+}
+
+.navbar-primary {
+	/* bright-blue */
+	/* background-color:#2BA8E0; */
+	/* deep-blue */ 
+	/*background-color:#006196!important;*/
+	/* sky-blue */
+	/*background-color:#6ECFF5!important; */
+	/* dark */
+	background-color: #1c3642!important;
+}
+
+
+.dot {
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:.2em;
+}
+
+.big-dot {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:.26em;
+}
+
+.dot-yellow {background-color:#FFF3CD; } .dot-red { background-color: #F8D7DA;} .dot-green { background-color: #D4EDDA; }
+
+.legend-word {display:inline; word-wrap: normal; padding: .1em; padding-left:.4em;}
+
+.legend-word>h5 { font-size:.8em; color:#005186;}
+
+.legend-word>h6 { font-size:.65em; margin:0;padding-top:.56em;display:fixed; bottom:0;}
+
+.legend-container { position:absolute; bottom:0; }
+
+.evr-logo {
+	height:40px;
+}

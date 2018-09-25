@@ -1,0 +1,80 @@
+<% if ((room[id].room.name.toLowerCase() == "experience")) { %>
+<a href="/experience">
+	<nav class="navbar fixed-top fixed-top-2 room-title-bar-ex ">
+		<div class="d-flex">
+			<div class="logo_set">
+				<img src="/assets/images/logos/TS.png" class="room_logo" alt="experience logo">
+			</div>
+			<div class="mr-auto p-2">
+				<div class="room-title"> 
+					<h4> Technology Solutions Tribe</h4>
+				</div>
+			</div>
+<% } else if ((room[id].room.name.toLowerCase() == "product and pricing") || (room[id].room.name.toLowerCase() == "product & pricing")) { %>
+<a href="/productandpricing">
+	<nav class="navbar fixed-top fixed-top-2 room-title-bar-pp">
+		<div class="d-flex">
+			<div class="logo_set">
+				<img src="/assets/images/logos/INO.png" class="room_logo" alt="productpricing logo">
+			</div>
+			<div class="mr-auto p-2">
+				<div class="room-title"> 
+					<h4> Innovations Tribe</h4>
+				</div>
+			</div>
+<% } else if ((room[id].room.name.toLowerCase() == "evolve the business")) { %>
+<a href="/evolvethebusiness">
+	<nav class="navbar fixed-top fixed-top-2 room-title-bar-eb">
+		<div class="d-flex">
+			<div class="logo_set">
+				<img src="/assets/images/logos/FIN.png" class="room_logo" alt="evolvethebusiness logo">
+			</div>
+			<div class="mr-auto p-2">
+				<div class="room-title"> 
+					<h4> Finance Tribe</h4>
+				</div>
+			</div> 
+<% } else if ((room[id].room.name.toLowerCase() == "manufacturing")) { %>
+<a href="manufacturing">
+	<nav class="navbar fixed-top fixed-top-2 room-title-bar-mf">
+		<div class="d-flex">
+			<div class="logo_set">
+				<img src="/assets/images/logos/EXP.png" class="room_logo" alt="manufacturing logo">
+			</div>
+			<div class="mr-auto p-2">
+				<div class="room-title"> 
+					<h4> Expansion Tribe </h4>
+				</div>
+			</div> 
+<% } else if ((room[id].room.name.toLowerCase() == "marketing")) { %>
+<a href="marketing">
+	<nav class="navbar fixed-top fixed-top-2 room-title-bar-mk">
+		<div class="d-flex">
+			<div class="logo_set">
+				<img src="/assets/images/logos/MK.png" class="room_logo" alt="marketing logo"> 
+			</div>
+			<div class="mr-auto p-2">
+				<div class="room-title"> 
+					<h4> Marketing Tribe </h4>
+				</div>
+			</div>
+<% } else if ((room[id].room.name.toLowerCase() == "employee impact")) { %>
+<a href="employeeimpact">
+	<nav class="navbar fixed-top fixed-top-2 room-title-bar-mk">
+		<div class="d-flex">
+			<div class="logo_set">
+				<img src="/assets/images/logos/HR.png" class="room_logo" alt="employee impact logo"> 
+			</div>
+			<div class="mr-auto p-2">
+				<div class="room-title"> 
+					<h4> Human Resource Tribe</h4>
+				</div>
+			</div>
+				<% }; %>
+
+
+<% if ((room[id].room.name.toLowerCase() == "experience") || (room[id].room.name.toLowerCase() == "product & pricing") || (room[id].room.name.toLowerCase() == "product and pricing") || (room[id].room.name.toLowerCase() == "evolve the business") || (room[id].room.name.toLowerCase() == "manufacturing") || (room[id].room.name.toLowerCase() == "marketing") || (room[id].room.name.toLowerCase() == "employee impact")) { %>
+		</div>
+	</nav>
+</a>
+<% }; %>

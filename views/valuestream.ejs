@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/room.css">
+    <link rel="stylesheet" type="text/css" href="/navbar.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<title>
+		EV <%= room[id].room.name %> Room
+	</title>
+</head>
+<body>
+    <% include templates/evr_navbar.ejs %>
+	<% include templates/room_navbar.ejs %>
+
+	<div class="main">
+    	<!-- Section for overview, e.g. mission statement, affiliated squads -->
+	    <div class="room-section room-section-sky">
+	    	<div class="row room-section-row">
+			    <div class="col-4">
+			    	<div class="quote">
+			    		<%= room[id].room.narrative.heading %>
+			    	</div>
+			    </div>
+			    <div class="col-6">
+			    	<div class="mission-statement">
+			    		<%= room[id].room.narrative.mission_statement %>
+					</div>
+				</div>
+			</div>
+				<div class="row member-deck ">
+					<div class="col-12 room-section-row">
+						<div class="row slt-squad-titlebar">
+							<div class="col-6">
+								<div class="row">
+									<div class="col-6">
+										<h5 class="slt-squad-header">SLT</h5>
+									</div>
+									<div class="col-12 content-black">
+										<div class="row">
+											<% room[id].room.team.slt.person.forEach(function(indiv) { %> 
+												<div class="col-2 slt-container">
+													<div class="card slt-card">
+														<img class="card-img-top slt-img" src="<%=indiv.$.pic%>" alt="<%=indiv.$.name%>">
+														<div class="card-body slt-name">
+															<p class="card-text card-text-bold" ><%= indiv.$.name%> </p>
+															<p class="card-text" ><%= indiv.$.role%> </p>
+														</div>
+													</div>
+												</div>
+											<% }); %>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="row">
+									<div class="col-12">
+										<h5 class="slt-squad-header">Squads</h5>
+									</div>
+								</div>
+								<div class="row content-black">
+									<div class="col-12">
+										<% room[id].room.team.squads.squad.forEach(function(item, i, arr) { %>
+											<% if (i % 5 === 0) { %>
+												<div class="row">
+											<% }; %>		
+
+											<div class="col-2 squad-name">
+												<p><%= item.$.name; %></p>
+											</div>
+
+											<% if (((i + 1) % 5 === 0) || (i == arr.length - 1)) { %>
+												</div>
+											<% }; %>	
+										<% }); %>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row ceremonies-titlebar ">
+							<div class="col-2">
+								<h5 class="slt-squad-header">
+									Ceremonies
+								</h5>
+							</div>
+						</div>
+						<div class="row ceremonies-row">
+							<% room[id].room.ceremonies.ceremony.forEach(function(item) { %>
+								<div class="col-6 ceremonies-box">
+									<div class="row">
+										<div class="col-3">
+											<h6>
+												<%= item.$.name; %>
+											</h6>
+										</div>
+									</div>
+									<div class="row content-black">
+										<div class="col-8">
+											<div class="ceremonies-content">
+												<%= item.$.time; %> <br>
+												<%= item.$.location; %> <br>
+												<%= item.$.Remote; %> <br>
+											</div>
+										</div>
+									</div>
+								</div>
+							<% }); %>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Visuals -->
+		<div class=" room-section">
+			<div class="row">
+				<div class="col-9 section-title">
+					<h5>Room Metrics</h5>
+				</div>
+				<div class="col-3">
+	                <% include templates/metric_legend.ejs %>
+	            </div>
+			</div>
+			<div class="row">
+				<% if (Array.isArray(room[id].room.metrics.metric)) { %>
+                    <% room[id].room.metrics.metric.forEach(function(metric, i) { %>
+						<div class="col-6">
+							<div class="row">
+								<div class="col-12 metric-pad">
+									<div class="metric-setting">
+										<% if (metric.$.status == "green") { %>
+										<div class="metric-success">
+										<% } if (metric.$.status == "yellow") { %>
+										<div  class="metric-warning">
+										<% } if (metric.$.status == "red") { %>
+										<div class="metric-dire">
+										<% } %>
+
+		    	                            <h4><%= metric.$.name %></h4>
+		    	                            <h5>Current: <%= metric.$.current %></h5>
+		    	                            <h5>Target: <%= metric.$.target %></h5>
+
+										<% if ((metric.$.status == "red") || (metric.$.status == "green") || (metric.$.status == "yellow") ){ %>
+										</div>
+										<% } %>
+
+										<!-- for div closing tags when using text editors: ignore -->
+										<% if ((1 == 0)) { %>
+										</div></div>
+										<% } %>
+
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="d-flex justify-content-center">
+										<div> <%= metric.$.graph %> </div>
+										<div class="metric-graph"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<% }); %>
+				<% } else { %>	
+					<div class="col-6">
+						<div class="row">
+							<div class="col-12 metric-pad">
+								<div class="metric-setting">
+									<% if (room[id].room.metrics.metric.$.status == "green") { %>
+									<div class="metric-success">
+									<% } if (room[id].room.metrics.metric.$.status == "yellow") { %>
+									<div  class="metric-warning">
+									<% } if (room[id].room.metrics.metric.$.status == "red") { %>
+									<div class="metric-dire">
+									<% } %>
+
+	    	                            <h4><%= room[id].room.metrics.metric.$.name %></h4>
+	    	                            <h5>Current: <%= room[id].room.metrics.metric.$.current %></h5>
+	    	                            <h5>Target: <%= room[id].room.metrics.metric.$.target %></h5>
+
+									<% if ((room[id].room.metrics.metric.$.status == "red") || (room[id].room.metrics.metric.$.status == "green") || (room[id].room.metrics.metric.$.status == "yellow") ){ %>
+									</div>
+									<% } %>
+
+									<!-- for div closing tags when using text editors: ignore -->
+									<% if ((1 == 0)) { %>
+									</div></div>
+									<% } %>
+
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="d-flex justify-content-center">
+									<div> <%= room[id].room.metrics.metric.$.graph %> </div>
+									<div class="metric-graph"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<% } %>		
+			</div>
+		</div>
+
+		<div class="room-section">
+			<div class="row">
+				<div class="col section-title">
+					<h5>Outcomes</h5>
+				</div>
+			</div>
+			<div class="row outcome-list-container">
+				<div class="col-12 ">
+					<% var outcomeCount = 0 %>
+					<% outcome.forEach(function(item, i) { %>
+						<% var outcome_room = item.outcome.room.toLowerCase().replace(/\s/g, '').replace(/[^a-zA-Z ]/g, '') %>
+						<% if (outcome_room == room[id].room.name.toLowerCase().replace(/\s/g, '').replace(/[^a-zA-Z ]/g, '')) { %>
+							<a href="/<%= outcome_room %>/<%=item.outcome.name.toLowerCase().replace(/\s/g, '').replace(/[^a-zA-Z ]/g, '').substring(0, 16)%>">
+								<% if ((outcomeCount % 2) == 0) { %>
+								<div class="row outcome-list-row-alt">
+								<% } else { %>
+								<div class="row outcome-list-row">
+								<% } %>
+
+									<div class="col-5 outcome-list-content">
+										<h6> <%= item.outcome.name %> <h6>
+									</div>
+									<div class="col-6 outcome-list-content">
+										<p> <%= item.outcome.annualmos %> </p>
+									</div>
+									<div class="col-1 center-outcome-metric-dot">
+										<% var outcome_metric = item.outcome.metrics.metric.$.status.toLowerCase() %>
+                                        <% if (outcome_metric == "green" || outcome_metric == "yellow" || outcome_metric == "red") { %>
+                                            <span class="dot-<%= outcome_metric %> big-dot"></span>
+                                        <%} %>
+									</div>
+
+								<% if (1 == 0) { %>
+								</div>
+								<% } %>
+								<% outcomeCount += 1 %>
+								</div>
+							</a>
+						<% } %>
+					<% }) %>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+<script>
+</script>
+
+</body>
+</html>

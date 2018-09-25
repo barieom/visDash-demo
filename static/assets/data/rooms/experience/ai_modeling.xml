@@ -1,0 +1,56 @@
+<outcome> 
+    <name>Implement machine learning for model Y</name> 
+    <fygoal>gp</fygoal> 
+    <room>experience</room> 
+    <value>$5,000,000 annual; $20,000,000 in 5 yrs</value> 
+    <annualmos>Lorem ipsum dolor sit amet, consectetur adipiscing elit</annualmos> 
+    <loe>data science team; 4 members </loe> 
+    <keyincrements> 
+        <increment> 
+            <name>Identify which model and test</name> 
+            <description>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description> 
+        </increment> 
+        <increment> 
+            <name>Business Model Application</name> 
+            <description>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</description> 
+        </increment> 
+        <increment> 
+            <name>Model Y 2.0.9 launch</name> 
+            <description>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </description> 
+        </increment> 
+    </keyincrements> 
+    <quarterlymos> 
+        <mos>Improve 50% of project Hawking</mos>
+        <mos>Lorem ipsum</mos>
+        <mos>dolor sit amet</mos>
+    </quarterlymos> 
+    <valueassumption> 
+        <assumption>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</assumption> 
+    </valueassumption>
+    <workBoard></workBoard> 
+    <team> 
+        <slt> 
+            <person name="" role="" pic="" /> 
+            <person name="" role="" pic="" /> 
+            <person name="" role="" pic="" /> 
+        </slt> 
+        <squads> 
+            <squad name="" pic=""/> 
+            <squad name="" pic=""/> 
+            <squad name="" pic=""/> 
+        </squads> 
+    </team> 
+    <metrics> 
+        <metric name="" current="" target="" status=""/> 
+        <graph></graph> 
+    </metrics> 
+    <impediments> 
+        <impediment name="" status="" raisedto="" raisedby="" raisedtolevel=""> 
+            <desc></desc> 
+        </impediment> 
+        <impediment name="" status="" raisedto="" raisedby="" raisedtolevel=""> 
+            <desc></desc> 
+        </impediment> 
+    </impediments> 
+    <filename>ai_modeling.xml</filename>
+</outcome>

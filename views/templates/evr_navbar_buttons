@@ -1,0 +1,31 @@
+<nav class="navbar  sticky-top navbar-expand-sm navbar-primary bg-dark" class="fixed-nav sticky-footer"> 
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto nav-word">
+             <li class="nav-item">
+                  <a class="nav-link nav-word" href="/"><img class="evr-logo" src="assets/images/evr_preview.png" alt="evr logo"> <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item " id="fygoals">
+                <button class="nav-item nav-link nav-word fy-tab-button" onclick="open_fy()">FY19 Goals</button>
+              </li>
+              <li class="nav-item hide-on-load" id="closeFygoals">
+              	<button class="nav-item nav-link nav-word fy-tab-button" onclick="close_fy()">Close FY19 Goals</button>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-setting" href="#" id="roomDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              		L2 Rooms
+              	</a>
+              	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              		<a class="dropdown-item" href="experience_room.html">Experience</a>
+              		<a class="dropdown-item" href="#">Product and Pricing</a>
+              		<a class="dropdown-item" href="#">Finance</a>
+              		<a class="dropdown-item" href="#">Manufacturing</a>
+              		<a class="dropdown-item" href="#">Marketing</a>
+                  <a class="dropdown-item" href="#">Employee Improvement</a>
+              </div>
+              </li>                
+              <li class="nav-item">
+                 <a class=" nav-link nav-word" href="outcomes.html">Trello Board</a>
+              </li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,55 @@
+<outcome> 
+    <name>Career Growth of all employees</name>
+    <fygoal>ei</fygoal> 
+    <room>employee impact</room> 
+    <value>NA</value> 
+    <annualmos>NA</annualmos> 
+    <loe>NA</loe> 
+    <keyincrements> 
+        <increment> 
+            <name>Career Development Seminar</name> 
+            <description>Quarterly career development sessions for anyone interested. Get in contact with consulting firm XYZ to setup seminars</description> 
+        </increment> 
+        <increment> 
+            <name>Programs</name> 
+            <description>Identify leadership programs to send promising employees to.</description> 
+        </increment> 
+        <increment> 
+            <name>Leadership Promotion</name> 
+            <description>Encourage leadership and career development initiatives from the bottom</description> 
+        </increment>
+    </keyincrements> 
+    <quarterlymos> 
+        <mos>Employee Quarterly Survey</mos>
+        <mos>More TBA</mos>
+    </quarterlymos> 
+    <valueassumption> 
+        <assumption></assumption> 
+    </valueassumption>
+    <workBoard></workBoard> 
+    <team> 
+        <slt> 
+            <person name="" role="" pic="" /> 
+            <person name="" role="" pic="" /> 
+            <person name="" role="" pic="" /> 
+        </slt> 
+        <squads> 
+            <squad name="" pic=""/> 
+            <squad name="" pic=""/> 
+            <squad name="" pic=""/> 
+        </squads> 
+    </team> 
+    <metrics> 
+        <metric name="" current="" target="" status=""/> 
+        <graph></graph> 
+    </metrics> 
+    <impediments> 
+        <impediment name="" status="" raisedto="" raisedby="" raisedtolevel=""> 
+            <desc></desc> 
+        </impediment> 
+        <impediment name="" status="" raisedto="" raisedby="" raisedtolevel=""> 
+            <desc></desc> 
+        </impediment> 
+    </impediments> 
+    <filename>career_growth.xml</filename>
+</outcome>

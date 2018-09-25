@@ -1,0 +1,44 @@
+<room>
+    <name>evolve the business</name>
+    <narrative>
+        <heading>Money, Money, Money</heading>
+        <mission_statement>Money, money, money
+Must be funny
+In the rich man's world
+Money, money, money
+Always sunny
+In the rich man's world</mission_statement>
+
+        <board>Analytics Dashboard http://some-adobe-dashboard/dashboard</board>
+    </narrative>
+    <workBoard>https://trello.com/invite/b/5ZKjIDLp/0d2407c6693826566c6b8b46c6e57ed6/experience-engineering</workBoard>
+    <team>
+        <slt>
+            <person name="Warren Buffett" role="VP" pic="https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2017/11/27/104864179-20150331-0014-1180.1910x1000.jpg"/>
+            <person name="Jasmine Tea" role="Analytics Director" pic="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350"/>
+            <person name="Mary Meeker" role="Financial Strategy Advisor" pic="https://amp.businessinsider.com/images/594c04cca3630f88018b4a6e-1136-757.jpg"/>
+            <person name="Jeff Weiner" role="Development Lead" pic="https://blog.linkedin.com/content/dam/blog/en-us/corporate/blog/Jeff_LearningBlogShare.png"/>
+        </slt>
+        <squads>
+            <squad name="" />
+            <squad name="" />
+            <squad name="" />
+            <squad name="" />
+            <squad name="" />
+            <squad name="" />
+            <squad name="" />
+        </squads>
+    </team>
+    <metrics>
+        <metric name="Revenue Index" current="247" target="900000" status="red">
+            <graph>some graph data</graph>
+        </metric>
+        <metric name="Gross Profit" current="$44M" target="$50M" status="green">
+            <graph url="https://corewiki/somegraph.png"/>            
+        </metric>
+    </metrics>
+    <ceremonies>
+        <ceremony name="Open-Meeting" time="Wednesdays @ 10am EST" location="Building Orange; Room 239" Remote="Meetme: 4444, password: 4444" />
+        <ceremony name="Ops review" time="Mondays @ 3pm EST" location="Building Strawberry; Room 1111" Remote="Meetme: 4444, password: 4444" />
+    </ceremonies>
+</room>

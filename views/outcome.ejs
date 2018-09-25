@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/room.css">
+    <link rel="stylesheet" type="text/css" href="/outcome.css">
+    <link rel="stylesheet" type="text/css" href="/navbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>
+        EVR <%= outcome[id].outcome.room %> Room
+    </title>
+</head>
+<body>
+
+	<% include templates/evr_navbar.ejs %>
+    <% include templates/outcome_navbar.ejs %>
+
+    <div class="main">
+        <div class="row">
+            <div class="col-10 outcome-title">
+                <h2> 
+                    <%= outcome[id].outcome.name %>
+                </h2>
+            </div>
+            <!-- <div class="offset-md-1"></div> -->
+            <div class="col-1 outcome-workboard">
+                <a href="<%= outcome[id].outcome.workBoard %>" class="btn btn-secondary btn-lg active " role="button" aria-disabled="true">
+                    <h6 class="outcome-workboard-word">See More Detail</h6>
+                </a>
+            </div>
+        </div>
+        <div class="row val-loe-row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-4 bold-title-desc">
+                        <h5>Estimated Value:<h5> 
+                    </div>
+                    <div class="col-5 bold-title-desc">
+                        <h5><%= outcome[id].outcome.value %><h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-3 bold-title-desc">
+                        <h5>Estimated LOE:<h5>
+                    </div>
+                    <div class="col-6 bold-title-desc">
+                        <h5><%= outcome[id].outcome.loe %><h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 outcome-statement">
+                <div class="row">
+                    <div class="col-6  bold-title-desc">
+                        <h5>Annual MoS</h5>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-11 statement-content">
+                        <p> <%= outcome[id].outcome.annualmos %></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 bold-title-desc">
+                        <h5>Current Quarter MoS</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-11 statement-content">
+                        <% if (Array.isArray(outcome[id].outcome.quarterlymos.mos)) { %>
+                            <% outcome[id].outcome.quarterlymos.mos.forEach(function(item, i) { %>
+                                <p> <%= i+1 %>. &#8196; <%= item %> </p>
+                            <% }); %> 
+                        <% } else { %>
+                            <p> <%= outcome[id].outcome.quarterlymos.mos %> </p>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 outcome-statement">
+                <div class="row">
+                    <div class="col-12 bold-title-desc">
+                        <h5>Value Assumption</h5>
+                    </div>
+                    <div class="col-12 statement-content">
+                        <% if (Array.isArray(outcome[id].outcome.valueassumption.assumption)) { %>
+                            <% outcome[id].outcome.valueassumption.assumption.forEach(function(item, i) { %>
+                            <p> <%= item %> </p>
+                            <% }); %> 
+                        <% } else { %>
+                            <p> <%= outcome[id].outcome.valueassumption.assumption %> </p>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Increments Section -->
+        <div class="row section-divider">
+            <div class="col-12 key-increments-row">
+                <% include templates/room_theme.ejs %>
+                <div class="row key-increments-title-row">
+                    <div class="col-12 key-increments-title">
+                        <h5>Key Increments</h5>
+                    </div>    
+                </div>
+                <% include templates/room_theme_close.ejs %>
+
+                <% if (Array.isArray(outcome[id].outcome.keyincrements.increment)) { %>
+                    <% outcome[id].outcome.keyincrements.increment.forEach(function(item, i) { %>
+                        <% if ((i % 2) == 0) { %>
+                        <div class="row key-increments-content-row">
+                        <% } else { %>
+                        <div class="row key-increments-content-row-alt">
+                        <% } %>
+                            <div class="col-5 key-increments-content ">
+                                <h6> <%= item.name %> </h6>
+                            </div>
+                            <div class="col-7 key-increments-content">
+                                <p> <%= item.description %> </p>
+                            </div>
+                        <% if (1 == 0) { %> 
+                        </div> 
+                        <% } %>    
+                        </div>
+                    <% }); %>
+                <% } else { %>
+                    <div class="row key-increments-content-row">
+                        <div class="col-5 key-increments-content ">
+                            <h6> <%= outcome[id].outcome.keyincrements.increment.name %> </h6>
+                        </div>
+                        <div class="col-7 key-increments-content">
+                            <p> <%= outcome[id].outcome.keyincrements.increment.description %> </p>
+                        </div>
+                    </div>                            
+                <% } %>
+            </div>
+        </div>
+
+        <!-- Metrics Row -->
+        <div class="row section-divider">
+            <div class="col-12">
+                <div class="row bold-title-desc">
+                    <h5>Metric</h5>
+                </div>
+                <div class="row o-metrics-row">
+                    <div class="col-6 o-metric-pad">
+                        <% if (outcome[id].outcome.metrics.metric.$.status == "green") { %>
+                        <div class="o-metric-success o-metric-number-box">
+                        <% } if (outcome[id].outcome.metrics.metric.$.status == "yellow") { %>
+                        <div class="o-metric-warning o-metric-number-box">
+                        <% } if (outcome[id].outcome.metrics.metric.$.status == "red") { %>
+                        <div class="o-metric-dire o-metric-number-box">
+                        <% } %>
+                            <div class="row o-metric-marg">
+                                <div class="col-12 o-metric-name">  
+                                   <h4><%= outcome[id].outcome.metrics.metric.$.name %></h4>
+                                </div>
+                            </div>
+                            <div class="row o-metric-marg">
+                                <div class="col-6 o-metric-num-row">
+                                    <h5>Current:</h5>
+                                </div>
+                                <div class="col-6 o-metric-num-row">
+                                    <h5><%= outcome[id].outcome.metrics.metric.$.current %></h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 o-metric-num-row">
+                                    <h5>Target:</h5>
+                                </div>
+                                <div class="col-6 o-metric-num-row">
+                                    <h5><%= outcome[id].outcome.metrics.metric.$.target %></h5>
+                                </div>
+                            </div>
+                        <% if ((outcome[id].outcome.metrics.metric.$.status == "green") || (outcome[id].outcome.metrics.metric.$.status == "yellow") || (outcome[id].outcome.metrics.metric.$.status == "red")) { %>
+                        </div>
+                        <% } %>
+
+                        <!-- for div closing tags when using text editors: ignore -->
+                        <% if (1 == 0) { %></div></div><% } %>
+                    </div>
+                    <!-- Graph -->
+                    <div class="col-6 o-metric-graph">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+        <!-- Outcome Member Information Row -->
+        <div class="row section-divider">
+            <div class="col-12">
+                <div class="row bold-title-desc">
+                    <h5>Member Details</h5>
+                </div>
+                <div class="row affiliation-row">
+                    <div class="col-6">
+                        <div class="row d-flex p-2">
+                            <% outcome[id].outcome.team.slt.person.forEach(function(item) { %> 
+                                <div class="col-3">
+                                    <div class="card slt-card">
+                                        <img class="card-img-top slt-img" src="<%=item.$.pic%>" alt="<%=item.$.name%>"/>
+                                        <div class="card-body slt-name">
+                                            <p class="card-text" ><%= item.$.role%> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            <% }); %>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <% outcome[id].outcome.team.squads.squad.forEach(function(item) { %> 
+                                <div class="col-3">
+                                    <div class="card slt-card">
+                                    <img class="card-img-top slt-img" src="<%=item.$.pic%>" alt="<%=item.$.name%>"/>
+                                    <div class="card-body slt-name">
+                                        <p class="card-text" ><%= item.$.name%> </p>
+                                    </div>
+                                    </div>
+                                </div>
+                            <% }); %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Impediments -->
+        <div class="row section-divider">
+            <div class="col-12">
+                <div class="row bold-title-desc">
+                    <h5> Impediments </h5>
+                </div>
+            </div>
+            <div class="col-12">
+                <!-- Must store outcome into _outcome variable to use impediment template -->
+                <% var _outcome = outcome[id] %>
+                <% include templates/impediments.ejs %>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

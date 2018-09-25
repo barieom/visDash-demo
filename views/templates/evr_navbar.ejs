@@ -1,0 +1,49 @@
+<nav class="navbar  sticky-top navbar-expand-sm navbar-primary bg-dark" class="fixed-nav sticky-footer"> 
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto nav-word">
+            <li class="nav-item">
+                <img class="evr-logo" src="/assets/logo/visdash-logo-md-wd.png" alt="evr logo"> <span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item">
+                <a class=" nav-link nav-word" href="/">Fiscal Year Goals</a>
+            </li>
+            <li class="nav-item" >
+                <a class=" nav-link nav-word" href="/valuestreams">Quarter Overview</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-setting" href="#" id="roomDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Value Streams
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/experience">Tech Solutions</a>
+                    <a class="dropdown-item" href="/productandpricing">Innovation</a>
+                    <a class="dropdown-item" href="/evolvethebusiness">Finance</a>
+                    <a class="dropdown-item" href="/manufacturing">Expansion</a>
+                    <a class="dropdown-item" href="/marketing">Marketing</a>
+                    <a class="dropdown-item" href="/employeeimpact">Human Res</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <% var editurl = "https://github.com/barieom/" %>
+                <% var redir = "yes" %>
+                
+                <% if (path == "home") { %>
+                    <% editurl = editurl + "fygoals/fy19.xml" %>
+                <% } else if (path == "vs_hub") { %>
+                    <a class="nav-link nav-word" href="javascript:alert('To edit this quarter overview, change the information in the value stream level. It will be updated on this page accordingly.')">Edit This Page</a>
+                    <% redir = "no" %>                    
+                <% } else if (path == "vs") { %>
+                    <% editurl = editurl + "rooms/" + vs + "/room.xml" %>
+                <% } else if (path == "outcome") { %>
+                    <% editurl = editurl + "rooms/" + vs + "/" + outcome[id].outcome.filename %>
+                <% } %>
+                <% if (redir == "yes") { %>
+                    <a class="nav-link nav-word" target="_blank" href=<%=editurl%>>Edit This Page</a>
+                <% } %>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link nav-word" href="/faq">FAQ</a>
+            </li>       
+        </ul>
+    </div>
+</nav>

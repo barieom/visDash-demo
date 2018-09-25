@@ -1,0 +1,54 @@
+<outcome> 
+    <name>Promote growth of all imployees and promote within</name> 
+    <fygoal>ei</fygoal> 
+    <room>employee impact</room> 
+    <value>NA</value> 
+    <annualmos>NA</annualmos> 
+    <loe>NA</loe> 
+    <keyincrements> 
+        <increment> 
+            <name>Leadership Development Sessions</name> 
+            <description>Host several keynote speakers on leadership and have a seminar</description> 
+        </increment> 
+        <increment> 
+            <name>Promotion</name> 
+            <description>Promote internal growth by promoting more within. Aim is 20% increase in promotion from last year.</description> 
+        </increment> 
+        <increment> 
+            <name>Frequent Culture MEetings</name> 
+            <description>ABCDEFGHIJKLMNOPQRSTUVWXYZ</description> 
+        </increment>  
+    </keyincrements> 
+    <quarterlymos> 
+        <mos>Promotion Scale </mos>
+    </quarterlymos> 
+    <valueassumption> 
+        <assumption>NA</assumption> 
+    </valueassumption>
+    <workBoard></workBoard> 
+    <team> 
+        <slt> 
+            <person name="" role="" pic="" /> 
+            <person name="" role="" pic="" /> 
+            <person name="" role="" pic="" /> 
+        </slt> 
+        <squads> 
+            <squad name="" pic=""/> 
+            <squad name="" pic=""/> 
+            <squad name="" pic=""/> 
+        </squads> 
+    </team> 
+    <metrics> 
+        <metric name="" current="" target="" status=""/> 
+        <graph></graph> 
+    </metrics> 
+    <impediments> 
+        <impediment name="" status="" raisedto="" raisedby="" raisedtolevel=""> 
+            <desc></desc> 
+        </impediment> 
+        <impediment name="" status="" raisedto="" raisedby="" raisedtolevel=""> 
+            <desc></desc> 
+        </impediment> 
+    </impediments> 
+    <filename>promotion.xml</filename>
+</outcome>

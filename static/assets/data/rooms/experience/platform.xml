@@ -1,0 +1,57 @@
+<outcome> 
+    <name>New Platform Implementation</name> 
+    <fygoal>gp</fygoal> 
+    <room>experience</room> 
+    <value>$4,000,000</value> 
+    <annualmos>Nemo enim ipsam voluptatem quia voluptas</annualmos> 
+    <loe>2 squads, Full Year </loe> 
+    <keyincrements> 
+        <increment> 
+            <name>Lorem Ipsum</name> 
+            <description>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description> 
+        </increment> 
+        <increment> 
+            <name>B nisi ut aliquid </name> 
+            <description>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</description> 
+        </increment> 
+        <increment> 
+            <name>Quis autem vel eum iure </name> 
+            <description>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </description> 
+        </increment> 
+    </keyincrements> 
+    <quarterlymos> 
+        <mos>$10,000 numquam eius modi tempora incidunt</mos>
+        <mos>%44 numquam eius modi tempora incidunt</mos> 
+    </quarterlymos> 
+    <valueassumption> 
+        <assumption>Excepteur sint occaecat cupidatat non proident</assumption>
+        <assumption>2.5% consequuntur magni dolores</assumption>
+        <assumption>numquam eius modi tempora incidunt</assumption> 
+    </valueassumption>
+    <workBoard></workBoard> 
+    <team> 
+        <slt> 
+            <person name="" role="" pic="" /> 
+            <person name="" role="" pic="" /> 
+            <person name="" role="" pic="" /> 
+        </slt> 
+        <squads> 
+            <squad name="" pic=""/> 
+            <squad name="" pic=""/> 
+            <squad name="" pic=""/> 
+        </squads> 
+    </team> 
+    <metrics> 
+        <metric name="FAC" current="1" target="7" status="red"/> 
+        <graph></graph> 
+    </metrics> 
+    <impediments> 
+        <impediment name="" status="" raisedto="" raisedby="" raisedtolevel=""> 
+            <desc></desc> 
+        </impediment> 
+        <impediment name="" status="" raisedto="" raisedby="" raisedtolevel=""> 
+            <desc></desc> 
+        </impediment> 
+    </impediments> 
+    <filename>platform.xml</filename>
+</outcome>

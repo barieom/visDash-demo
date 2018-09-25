@@ -1,0 +1,13 @@
+<% if (outcome[id].outcome.room.toLowerCase() == "experience") { %>
+	<div class="ex-theme">
+<% } else if ((outcome[id].outcome.room.toLowerCase() == "product and pricing") || (outcome[id].outcome.room.toLowerCase() == "product & pricing")) { %>
+	<div class="pp-theme">
+<% } else if (outcome[id].outcome.room.toLowerCase() == "evolve the business") { %>
+	<div class="eb-theme">
+<% } else if (outcome[id].outcome.room.toLowerCase() == "manufacturing") { %>
+	<div class="mf-theme">
+<% } else if (outcome[id].outcome.room.toLowerCase() == "marketing") { %>
+	<div class="mk-theme">
+<% } else if (outcome[id].outcome.room.toLowerCase() == "employee improvement") { %>
+	<div class="ei-theme">
+<% } %>

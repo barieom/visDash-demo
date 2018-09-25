@@ -1,0 +1,55 @@
+<outcome> 
+    <name>Brand Awareness</name> 
+    <fygoal>npb</fygoal> 
+    <room>Marketing</room> 
+    <value>Excepteur sint occaecat cupidatat non proident</value>  
+    <annualmos>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam</annualmos> 
+    <loe>1-2 Lorem</loe> 
+    <keyincrements> 
+        <increment> 
+            <name>Lorem ipsum dolor sit amet,</name> 
+            <description>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description> 
+        </increment> 
+        <increment> 
+            <name> dolore eu fugiat nulla</name> 
+            <description>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa qua</description> 
+        </increment> 
+        <increment> 
+            <name>If this then that</name> 
+            <description>Do that a lot until its that then this so this and grow</description> 
+        </increment> 
+    </keyincrements>  
+    <quarterlymos> 
+        <mos>sed quia consequuntur magni dolores</mos>
+        <mos>beatae vitae dicta sunt explicabo</mos> 
+    </quarterlymos> 
+    <valueassumption> 
+        <assumption>Full impact scheduled for 2020</assumption> 
+    </valueassumption>
+    <workBoard>https://wac-cdn.atlassian.com/dam/jcr:20386fdc-1de9-43ab-8ae6-4564aa8e7e94/image4.png?cdnVersion=jx</workBoard> 
+    <team> 
+        <slt> 
+            <person name="" role="" pic="" /> 
+            <person name="" role="" pic="" /> 
+            <person name="" role="" pic="" /> 
+        </slt> 
+        <squads> 
+            <squad name="" pic=""/> 
+            <squad name="" pic=""/> 
+            <squad name="" pic=""/> 
+        </squads> 
+    </team> 
+    <metrics> 
+        <metric name="" current="" target="" status=""/> 
+        <graph></graph> 
+    </metrics> 
+    <impediments> 
+        <impediment name="" status="" raisedto="" raisedby="" raisedtolevel=""> 
+            <desc></desc> 
+        </impediment> 
+        <impediment name="" status="" raisedto="" raisedby="" raisedtolevel=""> 
+            <desc></desc> 
+        </impediment> 
+    </impediments> 
+    <filename>brandaware.xml</filename>
+</outcome>

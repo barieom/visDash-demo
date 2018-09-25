@@ -1,0 +1,33 @@
+<room>
+    <name>Manufacturing</name>
+    <narrative>
+        <heading>Make and build</heading>
+        <mission_statement>To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take arms against a sea of troubles</mission_statement>
+
+        <board></board>
+    </narrative>
+    <workBoard></workBoard>
+    <team>
+        <slt>
+            <person name="Brian Halligan" role="VP of Expansion" pic="http://mitsloan.mit.edu/uploadedImagesV9/Global/Articles_and_Press_Releases/Newsroom_-_Articles/2015-halligan.jpg?n=8222"/>
+            <person name="Sergey Brin" role="Senior Manager" pic="https://specials-images.forbesimg.com/imageserve/5a8d93da31358e4955adf1c9/416x416.jpg?background=000000&cropX1=1399&cropX2=3806&cropY1=290&cropY2=2695"/>
+            <person name="Guy Smart" role="Operations Senior Director" pic="https://images.pexels.com/photos/555790/pexels-photo-555790.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+        </slt>
+        <squads>
+            <squad name="" />
+            <squad name="" />
+            <squad name="" />
+            <squad name="" />
+            <squad name="" />
+            <squad name="" />
+        </squads>
+    </team>
+    <metrics>
+        <metric name="SF HQ Completion" current="49%" target="100%" status="yellow"/>
+        <metric name="Cost Efficiency" current="$3M" target="$2.3M" status="red"/>
+    </metrics>
+    <ceremonies>
+        <ceremony name="Open Meeting" time="Thursdays @ 11am EST" location="Orange Room" Remote="Meetme: 11, password: 11" />
+        <ceremony name="Senior Management Meeting" time="Mondays @ 10am EST" location="Building 5" Remote="Meetme: 1, password: 1" />
+    </ceremonies>
+</room>

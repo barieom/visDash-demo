@@ -1,0 +1,37 @@
+<room>
+    <name>Product and Pricing</name>
+    <narrative>
+        <heading>Innovations</heading>
+        <mission_statement>It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.</mission_statement>
+
+        <board></board>
+    </narrative>
+    <workBoard></workBoard>
+    <team>
+        <slt>
+            <person name="Andrew Kortina" role="VP" pic="https://speakerdata2.s3.amazonaws.com/photo/image/862449/Andrew-Kortina.jpg"/>
+            <person name="Michael Bloomberg" role="Innovations Board Chair" pic="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Mike_Bloomberg_Headshot.jpg/220px-Mike_Bloomberg_Headshot.jpg"/>
+            <person name="Mark Parker" role="Merchandising Director" pic="https://img.buzzfeed.com/buzzfeed-static/static/enhanced/web03/2012/6/7/18/enhanced-buzz-30029-1339108271-0.jpg?downsize=715:*&output-format=auto&output-quality=auto"/>
+            <person name="Jessica Stockimage" role="Product Lead" pic="https://images.pexels.com/photos/795768/pexels-photo-795768.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+
+        </slt>
+        <squads>
+            <squad name="" />
+            <squad name="" />
+            <squad name="" />
+            <squad name="" />
+        </squads>
+    </team>
+    <metrics>
+        <metric name="ROI" current="387" target="444" status="green">
+            <graph>some graph data</graph>
+        </metric>
+        <metric name="Revenue" current="$34.1M" target="$60M" status="green">
+            <graph url="https://corewiki/somegraph.png" />
+        </metric>
+    </metrics>
+    <ceremonies>
+        <ceremony name="Open Meeting" time="Wednesdays @ 11am EST" location="123 Room" Remote="Meetme: 1234, password: 1234" />
+        <ceremony name="Operations Meeting" time="Thursdays @ 9am EST" location="321 Room" Remote="Meetme: 321, password: 321" />
+    </ceremonies>
+</room>

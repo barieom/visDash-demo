@@ -1,0 +1,37 @@
+#!groovy
+library identifier: 'jenkins-shared-library@master', retriever: modernSCM(
+  [$class: 'GitSCMSource',
+   remote: 'https://___.git',
+   credentialsId: 'vbujnkgitread'])
+
+node('docker && multistage && pact') {
+	
+	def workspace = pwd()
+	def files = findFiles(glob: '*.*')
+	echo "${workspace}"
+
+	stage ('Clean Working Dir') {
+		deleteDir()
+	}	
+
+	stage ('Checkout') {
+		checkout scm
+	}	
+
+	stage('Build docker') {
+		buildContainerAndPush("https://quay.io", "quay.io/____/ev:latest", "Docker-quay.io-_____pact_jenkins")
+	}
+
+
+	stage('Deploy') {
+		withCredentials([usernamePassword(credentialsId:"Docker-quay.io-_____pact_jenkins", usernameVariable: "quayUser", passwordVariable:"quayPassword")]) {
+
+			withCredentials([usernamePassword(credentialsId:"EVPlatform-VM-ssh", usernameVariable: "vmUser", passwordVariable:"vmPassword")]) {
+				sh 'chmod 777 execute.sh'
+				sh "sh ./execute.sh $vmUser $vmPassword $quayUser $quayPassword"
+			}
+
+		}
+	}
+
+}

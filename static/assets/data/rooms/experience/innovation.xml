@@ -1,0 +1,58 @@
+<outcome> 
+    <name>Innovation Growth</name> 
+    <fygoal>gp</fygoal> 
+    <room>experience</room> 
+    <value>$50,000,000 projected for 2020</value> 
+    <annualmos>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</annualmos> 
+    <loe>2 entities</loe> 
+    <keyincrements> 
+        <increment> 
+            <name>Invest in innovation team</name> 
+            <description>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description> 
+        </increment> 
+        <increment> 
+            <name>Innovation Quarterly Assessment</name> 
+            <description>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</description> 
+        </increment> 
+        <increment> 
+            <name>Innovation Launch</name> 
+            <description>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </description> 
+        </increment> 
+    </keyincrements> 
+    <quarterlymos> 
+        <mos>Lorem ipsum dolor sit amet, consectetur adipiscing elit</mos>
+		<mos>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</mos>
+        <mos>Lorem ipsum dolor sit amet, consectetur adipiscing elit</mos>
+        <mos>dolores eos qui ratione voluptatem sequi nesciunt. Neque porro</mos>
+    </quarterlymos> 
+    <valueassumption> 
+        <assumption>Estimated $9.6</assumption>
+		<assumption>10,000,000 Unique Visitors quarterly</assumption>
+    </valueassumption>
+    <workBoard></workBoard> 
+    <team> 
+        <slt> 
+            <person name="" role="" pic="" /> 
+            <person name="" role="" pic="" /> 
+            <person name="" role="" pic="" /> 
+        </slt> 
+        <squads> 
+            <squad name="" pic=""/> 
+            <squad name="" pic=""/> 
+            <squad name="" pic=""/> 
+        </squads> 
+    </team> 
+    <metrics> 
+        <metric name="Ins" current="13" target="29" status="yellow"/> 
+        <graph></graph> 
+    </metrics> 
+    <impediments> 
+        <impediment name="" status="" raisedto="" raisedby="" raisedtolevel=""> 
+            <desc></desc> 
+        </impediment> 
+        <impediment name="" status="" raisedto="" raisedby="" raisedtolevel=""> 
+            <desc></desc> 
+        </impediment> 
+    </impediments> 
+    <filename>innovation.xml</filename>
+</outcome>

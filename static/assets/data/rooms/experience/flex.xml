@@ -1,0 +1,55 @@
+<outcome> 
+    <name>Flexible Expansion</name> 
+    <fygoal>gp</fygoal> 
+    <room>Experience</room> 
+    <value>$6,000,000</value> 
+    <annualmos>Improve total revenue by margin of $4,000,000 and set up for expansion for 2020</annualmos> 
+    <loe>Team X</loe> 
+    <keyincrements> 
+        <increment> 
+            <name>Lorem ipsum dolor sit amet,</name> 
+            <description>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description> 
+        </increment> 
+        <increment> 
+            <name> dolore eu fugiat nulla</name> 
+            <description>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa qua</description> 
+        </increment> 
+        <increment> 
+            <name>If this then that</name> 
+            <description>Edit that a lot until its that then this so this</description> 
+        </increment> 
+    </keyincrements> 
+    <quarterlymos> 
+        <mos>This by 3%</mos> 
+        <mos>That by this then that is $10,000,000</mos> 
+        <mos>Measurement COYRS</mos> 
+    </quarterlymos> 
+    <valueassumption> 
+        <assumption>5% increase should be easy</assumption> 
+    </valueassumption>
+    <workBoard>https://d2t79q9g75enw7.cloudfront.net/wp-content/uploads/2016/10/kanban-board-recruitment.jpg?x38333</workBoard> 
+    <team> 
+        <slt> 
+            <person name="Jason Bourne" role="PM" pic="https://upload.wikimedia.org/wikipedia/en/6/60/Jason_bourne_infobox.jpg" /> 
+            <person name="Copernicus" role="Engineer Head" pic="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Nikolaus_Kopernikus.jpg/220px-Nikolaus_Kopernikus.jpg"/> 
+        </slt> 
+        <squads> 
+            <squad name="Duck Squad" pic="https://trello-avatars.s3.amazonaws.com/82dc9ae589c0cfb5ec50f10f10b6da0a/original.png"/> 
+            <squad name="Westeros" pic="https://trello-avatars.s3.amazonaws.com/a3e51923d92f87147e41345ed96f8ba1/original.png"/> 
+            <squad name="Strawhat Pirates" pic="https://trello-avatars.s3.amazonaws.com/c17100010a72651c08038fb0603679a1/original.png"/> 
+        </squads> 
+    </team> 
+    <metrics> 
+        <metric name="Dev" current="5.2%" target="6.1%" status="yellow"/> 
+        <graph>some graph data</graph> 
+    </metrics> 
+    <impediments> 
+        <impediment name="Resource" status="red"> 
+            <desc> Lack of resources in regards to xyzabcde.</desc> 
+        </impediment> 
+        <impediment name="Technology JA" status="green"> 
+            <desc> lorem ipsum dolor</desc> 
+        </impediment> 
+    </impediments> 
+    <filename>flex.xml</filename>
+</outcome>

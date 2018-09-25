@@ -1,0 +1,41 @@
+<room>
+    <name>Marketing</name>
+    <narrative>
+        <heading>We sell market</heading>
+        <mission_statement>I'm going to make him an offer he can't refuse</mission_statement>
+
+        <board></board>
+    </narrative>
+    <workBoard></workBoard>
+    <team>
+        <slt>
+            <person name="Larry Paige" role="VP" pic="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg/220px-Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg"/>
+            <person name="Tim Ferris" role="Brand Strategy Lead" pic="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Timothy_Ferriss.jpg/220px-Timothy_Ferriss.jpg"/>
+            <person name="Charles Saatchi" role="Advertisement SVP" pic="https://www.europeanceo.com/wp-content/uploads/2015/03/Saatchi.jpg"/>
+            <person name="Wonda FulSmile" role="Marketing Operations Director" pic="https://images.pexels.com/photos/773371/pexels-photo-773371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350"/>
+
+        </slt>
+        <squads>
+            <squad name="Public Relations" />
+            <squad name="Content Marketing" />
+            <squad name="Digital Ad Team" />
+            <squad name="TV" />
+            <squad name="Retail" />
+            <squad name="" />
+            <squad name="" />
+            <squad name="" />
+            <squad name="" />
+            <squad name="" />
+            <squad name="" />
+            <squad name="" />
+        </squads>
+    </team>
+    <metrics>
+        <metric name="Customer Insight" current="72.5%" target="80%" status="green"/>
+        <metric name="Growth Revenue" current="$29.2M" target="$35" status="green"/>
+    </metrics>
+    <ceremonies>
+        <ceremony name="Open Meeting" time="Wednesdays @ 9am EST" location="Building X: Room 222" Remote="Meetme: 10, password: 10" />
+        <ceremony name="Operations review meeting" time="Friday @ 11:30am EST" location="Building Y: Room 44" Remote="Meetme: 10, password: 10" />
+    </ceremonies>
+</room>

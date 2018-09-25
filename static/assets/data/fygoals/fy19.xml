@@ -1,0 +1,34 @@
+<fygoal>
+	<goal>
+		<id>cp</id>
+		<desc>Deliver ROI by a factor of $10M in FY19 by increasing efficiency </desc>
+		<partylead name="Barry Eom" pic="https://avatars3.githubusercontent.com/u/31739208?s=400&u=f77f7cbafedcda6223305d52bdcaa23de39e6324&v=4"/>
+		<mos name="ROI" target="6M" current="5M" status="green"/>
+		<mos name="Revenue Growth" target="10%" current="9.6%" status="green"/>
+	</goal>
+	<goal>
+		<id>gp</id>
+		<desc>Drive $40M increase in revenue through improvements on a more accessible mobile application and advertisement revenue</desc>
+		<partylead name="Warren Buffett" pic="https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2017/11/27/104864179-20150331-0014-1180.1910x1000.jpg"/>
+		<mos name=" Revenue" target="40MM" current="30MM" status="red"/>
+		<mos name="Profit" target="70%" current="65%" status="green"/>
+	</goal>
+	<goal>
+		<id>expansion</id>
+		<desc>Expand a new headquarters to the San Francisco area and recruit accordingly</desc>
+		<partylead name="Smart Individual" pic="https://images.pexels.com/photos/935969/pexels-photo-935969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350"/>
+		<mos name="SF Expansion" target="100%" current="65%" status="yellow"/>
+	</goal>
+	<goal>
+		<id>nbp</id>
+		<desc>Completely revamp our company's image from a small startup to an established larger scale corporation through digital marketing</desc>
+		<partylead name="Larry Paige" pic="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg/220px-Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg"/>
+		<mos name="Credible image" target="62%" current="60%" status="green"/>
+	</goal>
+	<goal>
+		<id>ei</id>
+		<desc>Improve the wellbeing of our employee by a factor of 20</desc>
+		<partylead name="Michael Scott" pic="https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png"/>
+		<mos name="Wellbeing Score" target="41" current="39" status="green"/>
+	</goal>
+</fygoal>

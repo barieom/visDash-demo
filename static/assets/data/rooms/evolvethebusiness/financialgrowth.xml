@@ -1,0 +1,52 @@
+<outcome> 
+    <name>Financial Growth for Lorem Ipsum</name> 
+    <fygoal>cp</fygoal> 
+    <room>Evolve the Business</room> 
+    <value>$60,000,000 overall horizontal growth</value> 
+    <annualmos>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam</annualmos> 
+    <loe>1-2 Lorem</loe> 
+    <keyincrements> 
+        <increment> 
+            <name>Lorem ipsum dolor sit amet,</name> 
+            <description>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description> 
+        </increment> 
+        <increment> 
+            <name> dolore eu fugiat nulla</name> 
+            <description>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa qua</description> 
+        </increment> 
+        <increment> 
+            <name>If this then that</name> 
+            <description>Do that a lot until its that then this so this and grow</description> 
+        </increment> 
+    </keyincrements>  
+    <quarterlymos> 
+        <mos>sed quia consequuntur magni dolores</mos>
+        <mos>beatae vitae dicta sunt explicabo</mos> 
+    </quarterlymos> 
+    <valueassumption> 
+        <assumption>Full impact scheduled for 2020</assumption> 
+    </valueassumption>
+    <workBoard>https://wac-cdn.atlassian.com/dam/jcr:20386fdc-1de9-43ab-8ae6-4564aa8e7e94/image4.png?cdnVersion=jx</workBoard> 
+    <team> 
+        <slt> 
+            <person name="Kurt Godel" role="Lead" pic="https://upload.wikimedia.org/wikipedia/en/4/42/Kurt_g%C3%B6del.jpg" /> 
+            <person name="Alan Turing" role="Engineering Director" pic="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Alan_Turing_Aged_16.jpg/220px-Alan_Turing_Aged_16.jpg"/> 
+            <person name="George Washington Carver" role="Lead Project" pic="https://upload.wikimedia.org/wikipedia/commons/d/d0/George_Washington_Carver_c1910_-_Restoration.jpg"/> 
+        </slt> 
+        <squads> 
+        </squads> 
+    </team> 
+    <metrics> 
+        <metric name="Growth" current="1.32%" target="2.1%" status="green"/> 
+        <graph>some graph data</graph> 
+    </metrics> 
+    <impediments> 
+        <impediment name="Lack of time" status="blocked"> 
+            <desc> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo </desc> 
+        </impediment> 
+        <impediment name="aut odit aut fugit" status="resolved" > 
+            <desc> inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur </desc> 
+        </impediment> 
+    </impediments> 
+    <filename>financialgrowth.xml</filename>
+</outcome>
